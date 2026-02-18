@@ -2,7 +2,7 @@ export const en = {
   meta: {
     title: 'Party Games with Friends',
     description:
-      '5 wild party games. Any number of players. Zero WiFi needed.',
+      '6 wild party games. Any number of players. Zero WiFi needed.',
   },
   nav: {
     lang_label: 'Français',
@@ -10,14 +10,15 @@ export const en = {
   },
   hero: {
     tagline: 'Party games\nwith friends',
-    sub: '5 wild games. Any number of players. Zero WiFi needed.',
+    sub: '6 wild games. Any number of players. Zero WiFi needed.',
     download_ios: 'Download on the App Store',
     download_android: 'Get it on Google Play',
     scroll_hint: 'Discover the games',
+    coming_soon: 'Coming soon',
   },
   games: {
-    title: '5 games to light up your night',
-    subtitle: 'Pick your favourite or let fate decide — every game is free.',
+    title: '6 games to light up your night',
+    subtitle: 'Pick your favourite or let fate decide.',
     random_desc: 'Let fate decide your next game',
     items: [
       {
@@ -50,6 +51,12 @@ export const en = {
         emoji: '🎯',
         color: '#22c55e',
       },
+      {
+        name: 'IMPOSTOR',
+        desc: 'Everyone shares a word — except one. Find them.',
+        emoji: '🕵️',
+        color: '#ef4444',
+      },
     ],
   },
   features: {
@@ -71,17 +78,18 @@ export const en = {
         desc: 'Switch language anytime in the app settings.',
       },
       {
-        icon: '🆓',
-        title: 'Completely free',
-        desc: 'All games, all content. No hidden fees.',
+        icon: '🔥',
+        title: 'Always growing',
+        desc: 'New games and content packs added regularly.',
       },
     ],
   },
   cta: {
     title: 'Ready to party?',
-    sub: 'Free to download. Free to play. Always.',
+    sub: 'No setup. No account. Just open and play.',
     download_ios: 'App Store',
     download_android: 'Google Play',
+    coming_soon: 'Coming soon',
   },
   footer: {
     privacy: 'Privacy Policy',

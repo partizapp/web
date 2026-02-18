@@ -4,10 +4,24 @@ interface Props {
   dict: Dictionary
 }
 
+// Scattered background party emojis — outer div handles position+rotation, inner handles float
+const FLOATING_ITEMS = [
+  { emoji: '🎊', pos: { top: '8%', left: '4%' },    size: '2.8rem', delay: '0s',    dur: '4.2s', rotate: '-15deg', opacity: 0.55 },
+  { emoji: '🍾', pos: { top: '5%', right: '6%' },   size: '2.4rem', delay: '0.7s',  dur: '5.1s', rotate: '12deg',  opacity: 0.50 },
+  { emoji: '🎭', pos: { top: '34%', left: '2%' },   size: '2rem',   delay: '1.4s',  dur: '3.7s', rotate: '-22deg', opacity: 0.40 },
+  { emoji: '🔥', pos: { top: '24%', right: '4%' },  size: '2rem',   delay: '0.3s',  dur: '4.6s', rotate: '8deg',   opacity: 0.50 },
+  { emoji: '✨', pos: { bottom: '36%', left: '7%' }, size: '1.6rem', delay: '2.1s',  dur: '3.3s', rotate: '-5deg',  opacity: 0.45 },
+  { emoji: '🎲', pos: { bottom: '30%', right: '6%' },size: '2rem',  delay: '0.9s',  dur: '4.1s', rotate: '20deg',  opacity: 0.45 },
+  { emoji: '🥳', pos: { top: '15%', left: '17%' },  size: '1.7rem', delay: '0.5s',  dur: '5.6s', rotate: '-10deg', opacity: 0.30 },
+  { emoji: '🎈', pos: { top: '18%', right: '16%' }, size: '1.7rem', delay: '1.8s',  dur: '3.9s', rotate: '15deg',  opacity: 0.30 },
+  { emoji: '⚡', pos: { bottom: '22%', left: '14%' },size: '1.5rem', delay: '2.8s',  dur: '4.4s', rotate: '-25deg', opacity: 0.25 },
+  { emoji: '🎶', pos: { bottom: '26%', right: '13%' },size:'1.5rem', delay: '1.2s', dur: '5.0s', rotate: '30deg',  opacity: 0.25 },
+]
+
 function AppStoreButton({ label }: { label: string }) {
   return (
     <a
-      href="#" // TODO: Replace with actual App Store link
+      href="#"
       className="inline-flex items-center gap-3 bg-white text-background px-6 py-3.5 rounded-2xl font-bold text-sm hover:bg-white/90 active:scale-95 transition-all"
     >
       <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -21,7 +35,7 @@ function AppStoreButton({ label }: { label: string }) {
 function PlayStoreButton({ label }: { label: string }) {
   return (
     <a
-      href="#" // TODO: Replace with actual Google Play link
+      href="#"
       className="inline-flex items-center gap-3 bg-surface border border-white/10 text-white px-6 py-3.5 rounded-2xl font-bold text-sm hover:bg-surface-light hover:border-white/20 active:scale-95 transition-all"
     >
       <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -39,38 +53,59 @@ export default function Hero({ dict }: Props) {
     <section
       className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-16 overflow-hidden"
       style={{
-        background:
-          'radial-gradient(ellipse 100% 65% at 50% -5%, rgba(233,30,140,0.22) 0%, transparent 65%)',
+        background: [
+          'radial-gradient(ellipse 120% 70% at 50% -10%, rgba(233,30,140,0.40) 0%, transparent 60%)',
+          'radial-gradient(ellipse 55% 45% at 0% 65%, rgba(249,115,22,0.14) 0%, transparent 55%)',
+          'radial-gradient(ellipse 55% 45% at 100% 40%, rgba(168,85,247,0.18) 0%, transparent 55%)',
+        ].join(', '),
       }}
     >
-      {/* Ambient orbs */}
+      {/* Scattered floating party emojis */}
+      {FLOATING_ITEMS.map((item, i) => (
+        <div
+          key={i}
+          className="absolute pointer-events-none select-none"
+          style={{ ...item.pos, fontSize: item.size, opacity: item.opacity, transform: `rotate(${item.rotate})` }}
+        >
+          <div
+            className="animate-float"
+            style={{ animationDelay: item.delay, animationDuration: item.dur }}
+          >
+            {item.emoji}
+          </div>
+        </div>
+      ))}
+
+      {/* Top glow bloom */}
       <div
-        className="absolute top-1/4 -left-32 w-64 h-64 rounded-full opacity-10 blur-3xl pointer-events-none"
-        style={{ background: '#e91e8c' }}
-      />
-      <div
-        className="absolute top-1/3 -right-32 w-64 h-64 rounded-full opacity-10 blur-3xl pointer-events-none"
-        style={{ background: '#a855f7' }}
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[280px] rounded-full blur-3xl pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse, rgba(233,30,140,0.25) 0%, transparent 70%)' }}
       />
 
-      {/* Floating emoji */}
-      <div className="text-6xl mb-6 animate-float select-none">🎉</div>
+      {/* Main floating emoji */}
+      <div className="text-6xl mb-6 animate-sway select-none">🎉</div>
 
-      {/* App name */}
-      <h1
-        className="text-8xl md:text-[9rem] font-black tracking-widest mb-5 leading-none"
-        style={{
-          background: 'linear-gradient(135deg, #ff4da6 0%, #e91e8c 60%, #c2185b 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-        }}
-      >
-        PARTIZ
-      </h1>
+      {/* App name with glow bloom */}
+      <div className="relative mb-5">
+        <div
+          className="absolute inset-0 blur-3xl scale-110 rounded-full pointer-events-none"
+          style={{ background: 'rgba(233,30,140,0.28)' }}
+        />
+        <h1
+          className="relative text-8xl md:text-[9rem] font-black tracking-widest leading-none"
+          style={{
+            background: 'linear-gradient(135deg, #ff6ec7 0%, #e91e8c 55%, #c2185b 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}
+        >
+          PARTIZ
+        </h1>
+      </div>
 
       {/* Tagline */}
-      <p className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
+      <p className="text-2xl md:text-3xl font-bold text-white mb-5 leading-tight">
         {lines.map((line, i) => (
           <span key={i}>
             {line}
@@ -79,15 +114,33 @@ export default function Hero({ dict }: Props) {
         ))}
       </p>
 
-      {/* Sub */}
-      <p className="text-secondary text-base md:text-lg max-w-sm mb-10">
-        {dict.hero.sub}
-      </p>
+      {/* Stat chips */}
+      <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+        {[
+          { icon: '🎮', label: '6 games' },
+          { icon: '👥', label: '∞ players' },
+          { icon: '📵', label: 'zero wifi' },
+        ].map(({ icon, label }) => (
+          <span
+            key={label}
+            className="inline-flex items-center gap-1.5 text-xs font-black tracking-wide uppercase px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-white/50"
+          >
+            <span>{icon}</span>
+            {label}
+          </span>
+        ))}
+      </div>
 
-      {/* Store buttons */}
-      <div className="flex flex-col sm:flex-row gap-3">
-        <AppStoreButton label={dict.hero.download_ios} />
-        <PlayStoreButton label={dict.hero.download_android} />
+      {/* Store buttons — coming soon */}
+      <div className="flex flex-col items-center gap-4">
+        <div className="inline-flex items-center gap-2 border border-amber-400/40 text-amber-300 text-xs font-black tracking-[0.15em] uppercase px-4 py-2 rounded-full bg-amber-400/10">
+          <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0" />
+          {dict.hero.coming_soon}
+        </div>
+        <div className="flex flex-col sm:flex-row gap-3 opacity-40 pointer-events-none select-none">
+          <AppStoreButton label={dict.hero.download_ios} />
+          <PlayStoreButton label={dict.hero.download_android} />
+        </div>
       </div>
 
       {/* Scroll hint */}

@@ -4,7 +4,7 @@ export const fr: Dictionary = {
   meta: {
     title: 'Jeux de soirée entre amis',
     description:
-      '5 jeux de soirée endiablés. Autant de joueurs que tu veux. Zéro WiFi nécessaire.',
+      '6 jeux de soirée endiablés. Autant de joueurs que tu veux. Zéro WiFi nécessaire.',
   },
   nav: {
     lang_label: 'English',
@@ -12,15 +12,15 @@ export const fr: Dictionary = {
   },
   hero: {
     tagline: 'Jeux de soirée\nentre amis',
-    sub: '5 jeux endiablés. Autant de joueurs que tu veux. Zéro WiFi nécessaire.',
+    sub: '6 jeux endiablés. Autant de joueurs que tu veux. Zéro WiFi nécessaire.',
     download_ios: "Télécharger sur l'App Store",
     download_android: 'Disponible sur Google Play',
     scroll_hint: 'Découvrir les jeux',
+    coming_soon: 'Bientôt disponible',
   },
   games: {
-    title: '5 jeux pour enflammer votre soirée',
-    subtitle:
-      'Choisissez votre favori ou laissez le hasard décider — chaque jeu est gratuit.',
+    title: '6 jeux pour enflammer votre soirée',
+    subtitle: 'Choisissez votre favori ou laissez le hasard décider.',
     random_desc: 'Laissez le hasard décider pour vous',
     items: [
       {
@@ -53,6 +53,12 @@ export const fr: Dictionary = {
         emoji: '🎯',
         color: '#22c55e',
       },
+      {
+        name: 'IMPOSTEUR',
+        desc: 'Tout le monde a le même mot — sauf un. Trouvez-le.',
+        emoji: '🕵️',
+        color: '#ef4444',
+      },
     ],
   },
   features: {
@@ -74,17 +80,18 @@ export const fr: Dictionary = {
         desc: 'Change de langue à tout moment dans les paramètres.',
       },
       {
-        icon: '🆓',
-        title: 'Totalement gratuit',
-        desc: 'Tous les jeux, tout le contenu. Sans frais cachés.',
+        icon: '🔥',
+        title: 'Toujours en évolution',
+        desc: 'De nouveaux jeux et packs de contenu ajoutés régulièrement.',
       },
     ],
   },
   cta: {
     title: 'Prêts à faire la fête ?',
-    sub: 'Gratuit à télécharger. Gratuit à jouer. Pour toujours.',
+    sub: 'Aucune configuration. Aucun compte. Ouvrez et jouez.',
     download_ios: 'App Store',
     download_android: 'Google Play',
+    coming_soon: 'Bientôt disponible',
   },
   footer: {
     privacy: 'Politique de confidentialité',

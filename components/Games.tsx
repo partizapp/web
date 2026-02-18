@@ -17,61 +17,76 @@ export default function Games({ dict }: Props) {
         </div>
 
         {/* Game cards grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {dict.games.items.map((game, i) => (
             <div
               key={i}
-              className="group flex items-center gap-5 p-5 rounded-2xl border border-white/8 bg-surface/40 hover:bg-surface/70 hover:border-white/15 transition-all duration-200 cursor-default"
-              style={{ borderLeftColor: game.color, borderLeftWidth: 3 }}
+              className="group relative rounded-3xl p-7 overflow-hidden cursor-default transition-all duration-300 hover:-translate-y-1"
+              style={{
+                background: `linear-gradient(145deg, ${game.color}20 0%, rgba(15,12,30,0.7) 100%)`,
+                border: `1px solid ${game.color}45`,
+              }}
             >
-              {/* Emoji icon */}
+              {/* Corner glow */}
               <div
-                className="w-14 h-14 shrink-0 rounded-xl flex items-center justify-center text-3xl"
-                style={{ backgroundColor: `${game.color}20` }}
-              >
-                {game.emoji}
-              </div>
+                className="absolute -top-8 -right-8 w-40 h-40 rounded-full blur-3xl opacity-25 group-hover:opacity-40 transition-opacity duration-300 pointer-events-none"
+                style={{ background: game.color }}
+              />
 
-              {/* Text */}
-              <div className="min-w-0">
-                <h3
-                  className="font-black text-base tracking-wide mb-1 leading-tight"
-                  style={{ color: game.color }}
-                >
-                  {game.name}
-                </h3>
-                <p className="text-secondary text-sm leading-snug">{game.desc}</p>
-              </div>
-
-              {/* Arrow */}
-              <svg
-                className="w-5 h-5 shrink-0 ml-auto text-muted group-hover:text-white/50 transition-colors"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+              {/* Large number watermark */}
+              <span
+                className="absolute -bottom-6 -right-2 text-[8rem] font-black leading-none select-none pointer-events-none"
+                style={{ color: game.color, opacity: 0.07 }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+                {i + 1}
+              </span>
+
+              <div className="relative flex flex-col gap-5">
+                {/* Top row: emoji + badge */}
+                <div className="flex items-start justify-between">
+                  <div
+                    className="w-16 h-16 rounded-2xl flex items-center justify-center text-4xl"
+                    style={{ background: `${game.color}18` }}
+                  >
+                    {game.emoji}
+                  </div>
+                  <span
+                    className="text-[10px] font-black tracking-[0.2em] px-3 py-1.5 rounded-full uppercase"
+                    style={{ background: `${game.color}20`, color: game.color }}
+                  >
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                </div>
+
+                {/* Text */}
+                <div>
+                  <h3
+                    className="font-black text-xl tracking-wide leading-tight mb-2"
+                    style={{ color: game.color }}
+                  >
+                    {game.name}
+                  </h3>
+                  <p className="text-secondary text-sm leading-relaxed">{game.desc}</p>
+                </div>
+              </div>
             </div>
           ))}
 
           {/* Random card */}
-          <div className="group flex items-center gap-5 p-5 rounded-2xl border border-dashed border-white/15 bg-transparent hover:bg-surface/30 transition-all duration-200 cursor-default sm:col-span-2">
-            <div className="w-14 h-14 shrink-0 rounded-xl flex items-center justify-center text-3xl bg-white/5">
-              🎲
+          <div className="sm:col-span-2 group relative rounded-3xl p-7 overflow-hidden cursor-default border border-dashed border-white/15 hover:border-white/25 transition-all duration-300">
+            <div className="flex items-center gap-6">
+              <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-4xl shrink-0 group-hover:bg-white/[0.08] transition-colors">
+                🎲
+              </div>
+              <div>
+                <span className="text-[10px] font-black tracking-[0.2em] text-white/30 uppercase block mb-1">
+                  Special
+                </span>
+                <h3 className="font-black text-xl tracking-wide text-white/60 mb-1">RANDOM</h3>
+                <p className="text-secondary text-sm">{dict.games.random_desc}</p>
+              </div>
+              <span className="ml-auto text-4xl">✨</span>
             </div>
-            <div>
-              <h3 className="font-black text-base tracking-wide mb-1 text-white/70">
-                RANDOM
-              </h3>
-              <p className="text-muted text-sm">{dict.games.random_desc}</p>
-            </div>
-            <span className="ml-auto text-xl">✨</span>
           </div>
         </div>
       </div>
