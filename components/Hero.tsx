@@ -1,3 +1,5 @@
+import { Fragment } from 'react'
+import Logo from '@/components/Logo'
 import type { Dictionary } from '@/lib/i18n'
 
 interface Props {
@@ -82,8 +84,10 @@ export default function Hero({ dict }: Props) {
         style={{ background: 'radial-gradient(ellipse, rgba(233,30,140,0.25) 0%, transparent 70%)' }}
       />
 
-      {/* Main floating emoji */}
-      <div className="text-6xl mb-6 animate-sway select-none">🎉</div>
+      {/* Brand mark */}
+      <div className="mb-6 animate-sway">
+        <Logo id="hero" markOnly width={72} />
+      </div>
 
       {/* App name with glow bloom */}
       <div className="relative mb-5">
@@ -105,29 +109,26 @@ export default function Hero({ dict }: Props) {
       </div>
 
       {/* Tagline */}
-      <p className="text-2xl md:text-3xl font-bold text-white mb-5 leading-tight">
-        {lines.map((line, i) => (
-          <span key={i}>
-            {line}
-            {i < lines.length - 1 && <br />}
-          </span>
-        ))}
+      <p className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
+        {lines.join(' ')}
       </p>
 
-      {/* Stat chips */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+      {/* Stats */}
+      <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 mb-10">
         {[
-          { icon: '🎮', label: '6 games' },
-          { icon: '👥', label: '∞ players' },
-          { icon: '📵', label: 'zero wifi' },
-        ].map(({ icon, label }) => (
-          <span
-            key={label}
-            className="inline-flex items-center gap-1.5 text-xs font-black tracking-wide uppercase px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-white/50"
-          >
-            <span>{icon}</span>
-            {label}
-          </span>
+          { value: '6', label: 'games' },
+          { value: '∞', label: 'players' },
+          { value: 'zero', label: 'wifi' },
+        ].map(({ value, label }, i, arr) => (
+          <Fragment key={label}>
+            <span className="inline-flex items-baseline gap-2">
+              <span className="text-base font-black text-white/70">{value}</span>
+              <span className="text-xs font-medium tracking-widest uppercase text-white/35">{label}</span>
+            </span>
+            {i < arr.length - 1 && (
+              <span className="text-white/20 select-none">·</span>
+            )}
+          </Fragment>
         ))}
       </div>
 

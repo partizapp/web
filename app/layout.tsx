@@ -10,12 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Partiz — Party Games with Friends',
-  description:
-    '5 wild party games. Any number of players. Zero WiFi needed. Free to download.',
-  icons: {
-    icon: '/favicon.png',
-    apple: '/icon.png',
-  },
+  description: '6 wild party games. Any number of players. Zero WiFi needed.',
 }
 
 export default function RootLayout({

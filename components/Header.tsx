@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Logo from '@/components/Logo'
 import type { Dictionary } from '@/lib/i18n'
 
 interface Props {
@@ -12,11 +13,8 @@ export default function Header({ lang, dict }: Props) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link
-          href={`/${lang}`}
-          className="text-xl font-black tracking-widest text-white hover:text-primary transition-colors"
-        >
-          PARTIZ
+        <Link href={`/${lang}`} className="hover:opacity-80 transition-opacity">
+          <Logo id="header" width={110} />
         </Link>
 
         <Link

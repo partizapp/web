@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Logo from '@/components/Logo'
 import type { Dictionary } from '@/lib/i18n'
 
 interface Props {
@@ -10,7 +11,7 @@ export default function Footer({ lang, dict }: Props) {
   return (
     <footer className="border-t border-white/5 py-10 px-6">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted">
-        <span className="font-black text-white/40 tracking-widest">PARTIZ</span>
+        <Logo id="footer" width={100} />
 
         <div className="flex items-center gap-6">
           <Link
