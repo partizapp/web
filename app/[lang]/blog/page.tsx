@@ -72,19 +72,22 @@ export default async function BlogIndexPage({
                       {post.title}
                     </h2>
                     <p className="text-secondary text-sm mb-2">{post.description}</p>
-                    <time
-                      dateTime={post.publishedAt}
-                      className="text-muted text-xs"
-                    >
-                      {new Date(post.publishedAt).toLocaleDateString(
-                        lang === 'fr' ? 'fr-FR' : 'en-US',
-                        {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        }
-                      )}
-                    </time>
+                    <div className="flex items-center gap-3 text-muted text-xs">
+                      <time dateTime={post.publishedAt}>
+                        {new Date(post.publishedAt).toLocaleDateString(
+                          lang === 'fr' ? 'fr-FR' : 'en-US',
+                          {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                          }
+                        )}
+                      </time>
+                      <span aria-hidden="true">·</span>
+                      <span>
+                        {post.readingTime} {lang === 'fr' ? 'min de lecture' : 'min read'}
+                      </span>
+                    </div>
                   </Link>
                 </article>
               ))

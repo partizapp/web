@@ -12,6 +12,12 @@ export interface BlogPost {
   publishedAt: string
   lang: string
   content: string
+  readingTime: number // minutes
+}
+
+function computeReadingTime(content: string): number {
+  const words = content.trim().split(/\s+/).length
+  return Math.max(1, Math.ceil(words / 200))
 }
 
 function getContentDir(lang: string) {
@@ -45,14 +51,14 @@ export function getBlogPosts(lang: string): Omit<BlogPost, 'content'>[] {
     const slug = file.replace(/\.md$/, '')
     const fullPath = path.join(dir, file)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
-    const { data } = matter(fileContents)
-
+    const { data, content } = matter(fileContents)
     posts.push({
       slug,
       title: data.title,
       description: data.description,
       publishedAt: data.publishedAt,
       lang,
+      readingTime: computeReadingTime(content),
     })
   }
 
@@ -75,6 +81,7 @@ export function getBlogPost(lang: string, slug: string): BlogPost | null {
     publishedAt: data.publishedAt,
     lang,
     content,
+    readingTime: computeReadingTime(content),
   }
 }
 

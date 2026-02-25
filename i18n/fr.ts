@@ -98,9 +98,34 @@ export const fr: Dictionary = {
     title: 'Blog',
     subtitle: 'Conseils, règles et idées pour votre prochaine soirée.',
     meta_description:
-      'Conseils, règles et idées pour les jeux de soirée. Apprenez à jouer à Action ou Vérité, Je n\'ai jamais, et plus.',
+      'Guides, règles et idées pour les jeux de soirée. Apprenez à jouer à Action ou Vérité, Je n\'ai jamais, Tu préfères, et plus.',
     back: 'Retour',
     empty: 'Aucun article pour le moment.',
+  },
+  faq: {
+    title: 'Questions fréquentes',
+    items: [
+      {
+        q: 'Partiz est-il gratuit ?',
+        a: 'Oui — Partiz est entièrement gratuit à télécharger et à jouer. Pas d\'achats intégrés, pas d\'abonnement.',
+      },
+      {
+        q: 'Partiz a-t-il besoin du WiFi ou d\'une connexion internet ?',
+        a: 'Non. Partiz fonctionne entièrement hors ligne. Sans WiFi, sans données mobiles. Parfait pour les road trips, le camping ou n\'importe où sans réseau.',
+      },
+      {
+        q: 'Combien de joueurs peuvent jouer ?',
+        a: 'Autant que vous voulez. Passez simplement le téléphone dans le groupe. Partiz fonctionne aussi bien avec 2 amis qu\'avec une grande bande.',
+      },
+      {
+        q: 'Quels jeux sont inclus dans Partiz ?',
+        a: 'Partiz inclut 6 jeux de soirée : Action ou Vérité, Tu préfères, Je n\'ai jamais, Le Plus Probable, Catégories et Imposteur.',
+      },
+      {
+        q: 'Partiz est-il disponible sur Android ?',
+        a: 'Partiz est actuellement disponible sur iOS (iPhone et iPad). Une version Android arrive bientôt.',
+      },
+    ],
   },
   footer: {
     privacy: 'Politique de confidentialité',

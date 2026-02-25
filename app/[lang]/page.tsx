@@ -7,6 +7,7 @@ import JsonLd from '@/components/JsonLd'
 import Games from '@/components/Games'
 import Features from '@/components/Features'
 import DownloadCTA from '@/components/DownloadCTA'
+import Faq from '@/components/Faq'
 import Footer from '@/components/Footer'
 
 export function generateStaticParams() {
@@ -61,6 +62,7 @@ export default async function HomePage({
         <Games dict={dict} />
         <Features dict={dict} />
         <DownloadCTA dict={dict} />
+        <Faq dict={dict} lang={lang} />
       </main>
       <Footer lang={lang} dict={dict} />
     </>

@@ -96,9 +96,34 @@ export const en = {
     title: 'Blog',
     subtitle: 'Tips, rules, and ideas for your next party.',
     meta_description:
-      'Party game tips, rules, and ideas. Learn how to play Truth or Dare, Never Have I Ever, and more.',
+      'Party game guides, rules, and ideas. Learn how to play Truth or Dare, Never Have I Ever, Would You Rather, and more.',
     back: 'Back',
     empty: 'No articles yet.',
+  },
+  faq: {
+    title: 'Frequently asked questions',
+    items: [
+      {
+        q: 'Is Partiz free?',
+        a: 'Yes — Partiz is completely free to download and play. No in-app purchases, no subscriptions.',
+      },
+      {
+        q: 'Does Partiz need WiFi or an internet connection?',
+        a: 'No. Partiz works entirely offline. No WiFi, no mobile data. Perfect for road trips, camping, or anywhere without a signal.',
+      },
+      {
+        q: 'How many players can play?',
+        a: 'Any number. Just pass the phone around the group. Partiz works equally well with 2 friends or a big crowd.',
+      },
+      {
+        q: 'What games are included in Partiz?',
+        a: 'Partiz includes 6 party games: Truth or Dare, Would You Rather, Never Have I Ever, Most Likely To, Categories, and Impostor.',
+      },
+      {
+        q: 'Is Partiz available on Android?',
+        a: 'Partiz is currently available on iOS (iPhone and iPad). An Android version is coming soon.',
+      },
+    ],
   },
   footer: {
     privacy: 'Privacy Policy',

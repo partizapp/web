@@ -46,21 +46,18 @@ export default function DownloadCTA({ dict }: Props) {
                 {dict.cta.download_ios}
               </a>
 
-              <div className="flex flex-col items-center gap-2">
-                <div className="inline-flex items-center gap-2 border border-amber-400/40 text-amber-300 text-xs font-black tracking-[0.15em] uppercase px-4 py-2 rounded-full bg-amber-400/10">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0" />
+              <div
+                className="inline-flex items-center gap-3 border border-white/10 text-white/40 px-8 py-4 rounded-2xl text-sm w-full sm:w-auto justify-center select-none"
+                role="img"
+                aria-label={`${dict.cta.download_android} — ${dict.cta.coming_soon}`}
+              >
+                <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.18 23.76c.37.2.8.21 1.2-.01l12.7-7.34-2.8-2.8-11.1 10.15zm-1.1-20.6v21.68c0 .52.27.97.72 1.16L14.88 14 2.8 1.92c-.45.2-.72.64-.72 1.24zM20.4 9.4l-2.84-1.64L14.5 11l3.06 3.06 2.86-1.65c.81-.47.81-1.55-.02-2.01zM4.38.24L17.08 7.6 14.27 10.4 3.18.26c.38-.22.83-.22 1.2-.02z" />
+                </svg>
+                <span className="font-black">{dict.cta.download_android}</span>
+                <span className="text-[10px] font-black tracking-[0.12em] uppercase text-amber-400/90 bg-amber-400/10 border border-amber-400/25 px-2.5 py-1 rounded-full leading-none">
                   {dict.cta.coming_soon}
-                </div>
-                <a
-                  href="#"
-                  aria-disabled
-                  className="inline-flex items-center gap-3 border border-white/20 text-white px-8 py-4 rounded-2xl font-black text-sm w-full sm:w-auto justify-center opacity-40 pointer-events-none select-none cursor-not-allowed"
-                >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3.18 23.76c.37.2.8.21 1.2-.01l12.7-7.34-2.8-2.8-11.1 10.15zm-1.1-20.6v21.68c0 .52.27.97.72 1.16L14.88 14 2.8 1.92c-.45.2-.72.64-.72 1.24zM20.4 9.4l-2.84-1.64L14.5 11l3.06 3.06 2.86-1.65c.81-.47.81-1.55-.02-2.01zM4.38.24L17.08 7.6 14.27 10.4 3.18.26c.38-.22.83-.22 1.2-.02z" />
-                  </svg>
-                  {dict.cta.download_android}
-                </a>
+                </span>
               </div>
             </div>
           </div>
