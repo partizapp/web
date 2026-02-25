@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getDictionary, locales } from '@/lib/i18n'
+import { SITE_URL } from '@/lib/constants'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -16,8 +17,11 @@ export async function generateMetadata({
   const { lang } = await params
   const dict = getDictionary(lang)
   return {
-    title: `${dict.privacy.title} — Partiz`,
-    description: dict.meta.description,
+    title: dict.privacy.title,
+    description: dict.privacy.meta_description,
+    alternates: {
+      canonical: `${SITE_URL}/${lang}/privacy`,
+    },
   }
 }
 
@@ -34,7 +38,7 @@ export default async function PrivacyPage({
     <>
       <Header lang={lang} dict={dict} />
 
-      <main className="pt-24 pb-16 px-6">
+      <main id="main" className="pt-24 pb-16 px-6">
         <div className="max-w-2xl mx-auto">
           {/* Back link */}
           <Link

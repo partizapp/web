@@ -7,6 +7,7 @@ export const en = {
   nav: {
     lang_label: 'Français',
     lang_href: '/fr',
+    blog: 'Blog',
   },
   hero: {
     tagline: 'Party games\nwith friends',
@@ -91,14 +92,24 @@ export const en = {
     download_android: 'Google Play',
     coming_soon: 'Coming soon',
   },
+  blog: {
+    title: 'Blog',
+    subtitle: 'Tips, rules, and ideas for your next party.',
+    meta_description:
+      'Party game tips, rules, and ideas. Learn how to play Truth or Dare, Never Have I Ever, and more.',
+    back: 'Back',
+    empty: 'No articles yet.',
+  },
   footer: {
     privacy: 'Privacy Policy',
-    rights: '© 2025 Partiz. All rights reserved.',
+    rights: '© 2026 Partiz. All rights reserved.',
   },
   privacy: {
     title: 'Privacy Policy',
+    meta_description:
+      'Partiz privacy policy. We do not collect, store, or share any personal data. Your party games stay private.',
     back: '← Back',
-    last_updated: 'Last updated: January 2025',
+    last_updated: 'Last updated: January 2026',
     intro:
       'Partiz ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use the Partiz mobile application.',
     sections: [

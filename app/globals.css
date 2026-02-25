@@ -26,3 +26,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #e91e8c;
 }
+
+/* Blog prose - link styles */
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose a:hover {
+  opacity: 0.9;
+}

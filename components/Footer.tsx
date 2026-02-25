@@ -15,6 +15,12 @@ export default function Footer({ lang, dict }: Props) {
 
         <div className="flex items-center gap-6">
           <Link
+            href={`/${lang}/blog`}
+            className="hover:text-white transition-colors"
+          >
+            {dict.nav.blog}
+          </Link>
+          <Link
             href={`/${lang}/privacy`}
             className="hover:text-white transition-colors"
           >

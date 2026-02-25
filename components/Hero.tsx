@@ -20,10 +20,14 @@ const FLOATING_ITEMS = [
   { emoji: '🎶', pos: { bottom: '26%', right: '13%' },size:'1.5rem', delay: '1.2s', dur: '5.0s', rotate: '30deg',  opacity: 0.25 },
 ]
 
+import { APP_STORE_URL } from '@/lib/constants'
+
 function AppStoreButton({ label }: { label: string }) {
   return (
     <a
-      href="#"
+      href={APP_STORE_URL}
+      target="_blank"
+      rel="noopener noreferrer"
       className="inline-flex items-center gap-3 bg-white text-background px-6 py-3.5 rounded-2xl font-bold text-sm hover:bg-white/90 active:scale-95 transition-all"
     >
       <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -34,17 +38,26 @@ function AppStoreButton({ label }: { label: string }) {
   )
 }
 
-function PlayStoreButton({ label }: { label: string }) {
+function PlayStoreButton({ label, comingSoon }: { label: string; comingSoon?: string }) {
   return (
-    <a
-      href="#"
-      className="inline-flex items-center gap-3 bg-surface border border-white/10 text-white px-6 py-3.5 rounded-2xl font-bold text-sm hover:bg-surface-light hover:border-white/20 active:scale-95 transition-all"
-    >
-      <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M3.18 23.76c.37.2.8.21 1.2-.01l12.7-7.34-2.8-2.8-11.1 10.15zm-1.1-20.6v21.68c0 .52.27.97.72 1.16L14.88 14 2.8 1.92c-.45.2-.72.64-.72 1.24zM20.4 9.4l-2.84-1.64L14.5 11l3.06 3.06 2.86-1.65c.81-.47.81-1.55-.02-2.01zM4.38.24L17.08 7.6 14.27 10.4 3.18.26c.38-.22.83-.22 1.2-.02z" />
-      </svg>
-      {label}
-    </a>
+    <div className="flex flex-col items-center gap-2">
+      {comingSoon && (
+        <span className="inline-flex items-center gap-2 border border-amber-400/40 text-amber-300 text-xs font-black tracking-[0.15em] uppercase px-4 py-2 rounded-full bg-amber-400/10">
+          <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0" />
+          {comingSoon}
+        </span>
+      )}
+      <a
+        href="#"
+        aria-disabled={!!comingSoon}
+        className={`inline-flex items-center gap-3 bg-surface border border-white/10 text-white px-6 py-3.5 rounded-2xl font-bold text-sm transition-all ${comingSoon ? 'opacity-40 pointer-events-none select-none cursor-not-allowed' : 'hover:bg-surface-light hover:border-white/20 active:scale-95'}`}
+      >
+        <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3.18 23.76c.37.2.8.21 1.2-.01l12.7-7.34-2.8-2.8-11.1 10.15zm-1.1-20.6v21.68c0 .52.27.97.72 1.16L14.88 14 2.8 1.92c-.45.2-.72.64-.72 1.24zM20.4 9.4l-2.84-1.64L14.5 11l3.06 3.06 2.86-1.65c.81-.47.81-1.55-.02-2.01zM4.38.24L17.08 7.6 14.27 10.4 3.18.26c.38-.22.83-.22 1.2-.02z" />
+        </svg>
+        {label}
+      </a>
+    </div>
   )
 }
 
@@ -132,16 +145,10 @@ export default function Hero({ dict }: Props) {
         ))}
       </div>
 
-      {/* Store buttons — coming soon */}
-      <div className="flex flex-col items-center gap-4">
-        <div className="inline-flex items-center gap-2 border border-amber-400/40 text-amber-300 text-xs font-black tracking-[0.15em] uppercase px-4 py-2 rounded-full bg-amber-400/10">
-          <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse shrink-0" />
-          {dict.hero.coming_soon}
-        </div>
-        <div className="flex flex-col sm:flex-row gap-3 opacity-40 pointer-events-none select-none">
-          <AppStoreButton label={dict.hero.download_ios} />
-          <PlayStoreButton label={dict.hero.download_android} />
-        </div>
+      {/* Store buttons — iOS available, Android coming soon */}
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <AppStoreButton label={dict.hero.download_ios} />
+        <PlayStoreButton label={dict.hero.download_android} comingSoon={dict.hero.coming_soon} />
       </div>
 
       {/* Scroll hint */}

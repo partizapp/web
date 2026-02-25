@@ -9,6 +9,7 @@ export const fr: Dictionary = {
   nav: {
     lang_label: 'English',
     lang_href: '/en',
+    blog: 'Blog',
   },
   hero: {
     tagline: 'Jeux de soirée\nentre amis',
@@ -93,14 +94,24 @@ export const fr: Dictionary = {
     download_android: 'Google Play',
     coming_soon: 'Bientôt disponible',
   },
+  blog: {
+    title: 'Blog',
+    subtitle: 'Conseils, règles et idées pour votre prochaine soirée.',
+    meta_description:
+      'Conseils, règles et idées pour les jeux de soirée. Apprenez à jouer à Action ou Vérité, Je n\'ai jamais, et plus.',
+    back: 'Retour',
+    empty: 'Aucun article pour le moment.',
+  },
   footer: {
     privacy: 'Politique de confidentialité',
-    rights: '© 2025 Partiz. Tous droits réservés.',
+    rights: '© 2026 Partiz. Tous droits réservés.',
   },
   privacy: {
     title: 'Politique de confidentialité',
+    meta_description:
+      'Politique de confidentialité Partiz. Nous ne collectons, ne stockons ni ne partageons aucune donnée personnelle.',
     back: '← Retour',
-    last_updated: 'Dernière mise à jour : janvier 2025',
+    last_updated: 'Dernière mise à jour : janvier 2026',
     intro:
       "Partiz (« nous ») s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez l'application mobile Partiz.",
     sections: [

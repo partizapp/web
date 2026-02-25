@@ -17,12 +17,20 @@ export default function Header({ lang, dict }: Props) {
           <Logo id="header" width={110} />
         </Link>
 
-        <Link
-          href={`/${otherLang}`}
-          className="text-sm font-semibold text-secondary hover:text-white transition-colors px-3 py-1.5 rounded-lg border border-white/10 hover:border-primary/40 hover:bg-surface/50"
-        >
-          {dict.nav.lang_label}
-        </Link>
+        <nav className="flex items-center gap-2">
+          <Link
+            href={`/${lang}/blog`}
+            className="text-sm font-semibold text-secondary hover:text-white transition-colors px-3 py-1.5 rounded-lg border border-white/10 hover:border-primary/40 hover:bg-surface/50"
+          >
+            {dict.nav.blog}
+          </Link>
+          <Link
+            href={`/${otherLang}`}
+            className="text-sm font-semibold text-secondary hover:text-white transition-colors px-3 py-1.5 rounded-lg border border-white/10 hover:border-primary/40 hover:bg-surface/50"
+          >
+            {dict.nav.lang_label}
+          </Link>
+        </nav>
       </div>
     </header>
   )
