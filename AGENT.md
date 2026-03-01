@@ -80,6 +80,7 @@ middleware.ts                Locale detection via accept-language header → x-l
 | `how-to-play-truth-or-dare` | How to Play Truth or Dare: Rules, Questions & Dare Ideas | 2026-01-15 |
 | `how-to-play-never-have-i-ever` | How to Play Never Have I Ever: Rules & 100+ Questions | 2026-02-01 |
 | `how-to-play-would-you-rather` | How to Play Would You Rather: Rules & 60+ Scenarios | 2026-02-15 |
+| `how-to-play-most-likely-to` | How to Play Most Likely To: Rules & 60+ Questions | 2026-02-28 |
 
 All articles exist in both `en/` and `fr/`.
 
@@ -141,6 +142,9 @@ This pattern is used identically in both `Hero.tsx` (`PlayStoreButton` component
 ---
 
 ## Changelog
+
+### 2026-03-01
+- Add Most Likely To article (EN + FR): ~800 words, 60+ questions in 3 tiers (Funny/Real Talk/Ruthless), variations, FAQ, cross-links
 
 ### 2026-02-25
 - Rewrote Truth or Dare article (~250 words → ~700 words, EN + FR)
