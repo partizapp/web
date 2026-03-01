@@ -134,26 +134,26 @@ export const fr: Dictionary = {
   privacy: {
     title: 'Politique de confidentialité',
     meta_description:
-      'Politique de confidentialité Partiz. Nous ne collectons, ne stockons ni ne partageons aucune donnée personnelle.',
+      "Politique de confidentialité Partiz. Nous collectons des données d'utilisation anonymes via Amplitude pour améliorer l'application. Aucune donnée personnelle n'est collectée.",
     back: '← Retour',
-    last_updated: 'Dernière mise à jour : janvier 2026',
+    last_updated: 'Dernière mise à jour : mars 2026',
     intro:
       "Partiz (« nous ») s'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous traitons les informations lorsque vous utilisez l'application mobile Partiz.",
     sections: [
       {
         title: 'Informations collectées',
         content:
-          "Partiz ne collecte, ne stocke et ne transmet aucune information personnelle. L'application fonctionne entièrement sur votre appareil sans nécessiter de compte ni de connexion internet. Les noms des joueurs et les données de jeu n'existent que dans la mémoire de l'application et ne sont pas sauvegardés après sa fermeture.",
+          "Partiz ne collecte pas d'informations personnelles telles que votre nom, adresse e-mail ou toute donnée permettant de vous identifier. L'application fonctionne sans compte. Les noms des joueurs et les données de jeu n'existent que dans la mémoire de l'application et ne sont pas sauvegardés après sa fermeture. Nous collectons toutefois des données d'utilisation anonymes via Amplitude (voir ci-dessous) afin de mieux comprendre comment l'application est utilisée et de l'améliorer.",
       },
       {
-        title: 'Aucun stockage de données',
+        title: 'Analyse — Amplitude',
         content:
-          "Nous n'utilisons pas de bases de données, de serveurs ou de stockage en ligne. Aucune information saisie dans l'application (comme les noms des joueurs) n'est conservée sur votre appareil après la session ou transmise à nous ou à des tiers.",
+          "Nous utilisons Amplitude, un service d'analyse produit, pour collecter des informations anonymes sur l'utilisation de l'application. Cela inclut : le type d'appareil, la version du système d'exploitation, la version de l'application, la durée des sessions et les fonctionnalités visitées. Ces données ne sont pas liées à une identité personnelle. Amplitude peut stocker ces données sur des serveurs situés aux États-Unis. Plus d'informations sur amplitude.com/privacy.",
       },
       {
-        title: 'Aucune analyse ni suivi',
+        title: 'Utilisation des données',
         content:
-          "Partiz n'utilise pas d'outils d'analyse, de logiciels de suivi, ni de SDK tiers collectant des données comportementales. Nous ne suivons pas votre utilisation de l'application.",
+          "Nous utilisons les données analytiques anonymes uniquement pour comprendre comment les utilisateurs se servent de Partiz et pour améliorer l'application. Nous ne vendons, ne louons ni ne partageons ces données avec des tiers à des fins publicitaires.",
       },
       {
         title: 'Aucune publicité',
@@ -163,7 +163,12 @@ export const fr: Dictionary = {
       {
         title: 'Vie privée des enfants',
         content:
-          "Partiz ne collecte sciemment aucune information d'enfants de moins de 13 ans. Puisque nous ne collectons aucune donnée, l'application est sûre pour tous les âges.",
+          "Partiz est conçu pour des groupes d'amis et de famille. Nous ne collectons sciemment aucune information personnelle d'enfants de moins de 13 ans. Les données analytiques anonymes que nous collectons ne contiennent aucune information permettant d'identifier une personne.",
+      },
+      {
+        title: 'Vos droits',
+        content:
+          "Selon votre lieu de résidence, vous pouvez disposer de droits sur vos données en vertu de lois telles que le RGPD (UE) ou le CCPA (Californie). Puisque nous ne collectons pas de données personnelles permettant de vous identifier, ces droits concernent principalement les données analytiques anonymes détenues par Amplitude. Pour demander la suppression des données associées à votre appareil, contactez-nous à hello@partiz.app et nous travaillerons avec Amplitude pour honorer votre demande.",
       },
       {
         title: 'Modifications de cette politique',

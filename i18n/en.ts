@@ -132,26 +132,26 @@ export const en = {
   privacy: {
     title: 'Privacy Policy',
     meta_description:
-      'Partiz privacy policy. We do not collect, store, or share any personal data. Your party games stay private.',
+      'Partiz privacy policy. We collect anonymous usage data via Amplitude to improve the app. No personal data is collected or stored.',
     back: '← Back',
-    last_updated: 'Last updated: January 2026',
+    last_updated: 'Last updated: March 2026',
     intro:
       'Partiz ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use the Partiz mobile application.',
     sections: [
       {
         title: 'Information We Collect',
         content:
-          "Partiz does not collect, store, or transmit any personal information. The app works entirely on your device without requiring an account or internet connection. Player names and game data exist only in the app's memory and are not saved after you close the app.",
+          "Partiz does not collect personal information such as your name, email address, or any data that identifies you. The app works without an account. Player names and game data exist only in the app's memory and are not saved after you close the app. We do, however, collect anonymous usage data through Amplitude (see below) to help us understand how the app is used and improve it over time.",
       },
       {
-        title: 'No Data Storage',
+        title: 'Analytics — Amplitude',
         content:
-          'We do not use databases, servers, or cloud storage. No information you enter in the app (such as player names) is stored on your device after the session ends, nor is it transmitted to us or any third party.',
+          'We use Amplitude, a product analytics service, to collect anonymous information about how the app is used. This includes: device type, operating system version, app version, session duration, and which features are visited. This data is not linked to any personal identity. Amplitude may store this data on servers in the United States. You can learn more at amplitude.com/privacy.',
       },
       {
-        title: 'No Analytics or Tracking',
+        title: 'How We Use This Data',
         content:
-          'Partiz does not use analytics tools, tracking software, or any third-party SDKs that collect behavioural data. We do not track how you use the app.',
+          'We use anonymous analytics data solely to understand how people use Partiz and to make the app better. We do not sell, rent, or share this data with any third party for advertising purposes.',
       },
       {
         title: 'No Advertising',
@@ -161,7 +161,12 @@ export const en = {
       {
         title: "Children's Privacy",
         content:
-          'Partiz does not knowingly collect any information from children under the age of 13. Since we collect no information at all, the app is safe for all ages.',
+          'Partiz is designed for groups of friends and family. We do not knowingly collect personal information from children under the age of 13. The anonymous analytics data we collect does not include any personally identifiable information.',
+      },
+      {
+        title: 'Your Rights',
+        content:
+          'Depending on where you live, you may have rights regarding your data under laws such as the GDPR (EU) or CCPA (California). Since we do not collect personal data that identifies you, most of these rights relate to the anonymous analytics data held by Amplitude. To request deletion of data associated with your device, contact us at hello@partiz.app and we will work with Amplitude to fulfil your request.',
       },
       {
         title: 'Changes to This Policy',
