@@ -49,9 +49,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: ['/opengraph-image.png'],
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
 }
 
 export default async function RootLayout({
