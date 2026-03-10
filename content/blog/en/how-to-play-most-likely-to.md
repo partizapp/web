@@ -135,4 +135,4 @@ A typical round of 15–20 questions takes about 20 minutes. Most groups play tw
 
 Ready to play? **Download [Partiz](https://partiz.app)** for free — Most Likely To is built in with plenty of questions, plus 5 other party games, all without WiFi.
 
-Explore more games: [How to play Truth or Dare](/en/blog/how-to-play-truth-or-dare) · [How to play Never Have I Ever](/en/blog/how-to-play-never-have-i-ever) · [How to play Would You Rather](/en/blog/how-to-play-would-you-rather)
+Explore more games: [How to play Truth or Dare](/en/blog/how-to-play-truth-or-dare) · [How to play Never Have I Ever](/en/blog/how-to-play-never-have-i-ever) · [How to play Would You Rather](/en/blog/how-to-play-would-you-rather) · [How to play Categories](/en/blog/how-to-play-categories)

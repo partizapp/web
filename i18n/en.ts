@@ -96,7 +96,7 @@ export const en = {
     title: 'Blog',
     subtitle: 'Tips, rules, and ideas for your next party.',
     meta_description:
-      'Party game guides, rules, and ideas. Learn how to play Truth or Dare, Never Have I Ever, Would You Rather, and more.',
+      'Party game guides, rules, and ideas. Learn how to play Truth or Dare, Never Have I Ever, Would You Rather, Categories, and more.',
     back: 'Back',
     empty: 'No articles yet.',
   },

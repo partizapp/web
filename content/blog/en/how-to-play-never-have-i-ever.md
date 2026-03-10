@@ -127,4 +127,4 @@ The core game is the same. The drinking variant just replaces finger-counting wi
 
 Ready to play? **Download [Partiz](https://partiz.app)** for free — Never Have I Ever is built in with hundreds of questions, plus 5 other party games, all without WiFi.
 
-Explore more games: [How to play Truth or Dare](/en/blog/how-to-play-truth-or-dare) · [How to play Would You Rather](/en/blog/how-to-play-would-you-rather)
+Explore more games: [How to play Truth or Dare](/en/blog/how-to-play-truth-or-dare) · [How to play Would You Rather](/en/blog/how-to-play-would-you-rather) · [How to play Categories](/en/blog/how-to-play-categories)

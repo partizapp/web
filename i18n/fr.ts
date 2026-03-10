@@ -98,7 +98,7 @@ export const fr: Dictionary = {
     title: 'Blog',
     subtitle: 'Conseils, règles et idées pour votre prochaine soirée.',
     meta_description:
-      'Guides, règles et idées pour les jeux de soirée. Apprenez à jouer à Action ou Vérité, Je n\'ai jamais, Tu préfères, et plus.',
+      'Guides, règles et idées pour les jeux de soirée. Apprenez à jouer à Action ou Vérité, Je n\'ai jamais, Tu préfères, les Catégories, et plus.',
     back: 'Retour',
     empty: 'Aucun article pour le moment.',
   },
