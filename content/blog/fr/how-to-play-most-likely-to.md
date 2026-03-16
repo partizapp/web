@@ -135,4 +135,4 @@ Un tour de 15 à 20 questions prend environ 20 minutes. La plupart des groupes f
 
 Prêt à jouer ? **Téléchargez [Partiz](https://partiz.app)** gratuitement — Le Plus Probable est inclus avec de nombreuses questions, plus 5 autres jeux de soirée, sans WiFi.
 
-Explorez d'autres jeux : [Action ou Vérité](/fr/blog/how-to-play-truth-or-dare) · [Je n'ai jamais](/fr/blog/how-to-play-never-have-i-ever) · [Tu préfères](/fr/blog/how-to-play-would-you-rather) · [Les Catégories](/fr/blog/how-to-play-categories)
+Explorez d'autres jeux : [Action ou Vérité](/fr/blog/how-to-play-truth-or-dare) · [Je n'ai jamais](/fr/blog/how-to-play-never-have-i-ever) · [Tu préfères](/fr/blog/how-to-play-would-you-rather) · [Les Catégories](/fr/blog/how-to-play-categories) · [Imposteur](/fr/blog/how-to-play-impostor)

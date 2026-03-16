@@ -132,4 +132,4 @@ Absolument. Restez sur les scénarios drôles et décalés et c'est parfait pour
 
 Prêt à jouer ? **Téléchargez [Partiz](https://partiz.app)** gratuitement — Tu préfères est inclus avec des scénarios illimités, plus 5 autres jeux de soirée, sans WiFi.
 
-Explorez d'autres jeux : [Comment jouer à Action ou Vérité](/fr/blog/how-to-play-truth-or-dare) · [Comment jouer à Je n'ai jamais](/fr/blog/how-to-play-never-have-i-ever) · [Comment jouer aux Catégories](/fr/blog/how-to-play-categories)
+Explorez d'autres jeux : [Comment jouer à Action ou Vérité](/fr/blog/how-to-play-truth-or-dare) · [Comment jouer à Je n'ai jamais](/fr/blog/how-to-play-never-have-i-ever) · [Comment jouer aux Catégories](/fr/blog/how-to-play-categories) · [Comment jouer à Imposteur](/fr/blog/how-to-play-impostor)

@@ -132,4 +132,4 @@ Absolutely. Stick to the Funny & Silly section above and it's great for all ages
 
 Ready to play? **Download [Partiz](https://partiz.app)** for free — Would You Rather is built in with endless scenarios, plus 5 other party games, all without WiFi.
 
-Explore more games: [How to play Truth or Dare](/en/blog/how-to-play-truth-or-dare) · [How to play Never Have I Ever](/en/blog/how-to-play-never-have-i-ever) · [How to play Categories](/en/blog/how-to-play-categories)
+Explore more games: [How to play Truth or Dare](/en/blog/how-to-play-truth-or-dare) · [How to play Never Have I Ever](/en/blog/how-to-play-never-have-i-ever) · [How to play Categories](/en/blog/how-to-play-categories) · [How to play Impostor](/en/blog/how-to-play-impostor)

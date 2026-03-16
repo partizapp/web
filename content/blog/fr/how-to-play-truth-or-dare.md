@@ -112,4 +112,4 @@ La plupart des groupes jouent 20 à 40 minutes avant de naturellement changer de
 
 Prêt à jouer ? **Téléchargez [Partiz](https://partiz.app)** gratuitement — Action ou Vérité est inclus avec des centaines de questions et défis, plus 5 autres jeux de soirée, sans WiFi.
 
-Explorez d'autres jeux : [Comment jouer à Je n'ai jamais](/fr/blog/how-to-play-never-have-i-ever) · [Comment jouer à Tu préfères](/fr/blog/how-to-play-would-you-rather) · [Comment jouer aux Catégories](/fr/blog/how-to-play-categories)
+Explorez d'autres jeux : [Comment jouer à Je n'ai jamais](/fr/blog/how-to-play-never-have-i-ever) · [Comment jouer à Tu préfères](/fr/blog/how-to-play-would-you-rather) · [Comment jouer aux Catégories](/fr/blog/how-to-play-categories) · [Comment jouer à Imposteur](/fr/blog/how-to-play-impostor)

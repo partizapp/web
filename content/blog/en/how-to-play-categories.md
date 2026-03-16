@@ -195,4 +195,4 @@ A round of 10 categories takes about 20–30 minutes. You can extend as long as 
 
 Ready to play? **Download [Partiz](https://partiz.app)** for free — Categories is built in with hundreds of category ideas and an automatic timer, plus 5 other party games, all without WiFi.
 
-Explore more games: [How to play Truth or Dare](/en/blog/how-to-play-truth-or-dare) · [How to play Never Have I Ever](/en/blog/how-to-play-never-have-i-ever) · [How to play Would You Rather](/en/blog/how-to-play-would-you-rather) · [How to play Most Likely To](/en/blog/how-to-play-most-likely-to)
+Explore more games: [How to play Truth or Dare](/en/blog/how-to-play-truth-or-dare) · [How to play Never Have I Ever](/en/blog/how-to-play-never-have-i-ever) · [How to play Would You Rather](/en/blog/how-to-play-would-you-rather) · [How to play Most Likely To](/en/blog/how-to-play-most-likely-to) · [How to play Impostor](/en/blog/how-to-play-impostor)

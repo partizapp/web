@@ -127,4 +127,4 @@ Pas du tout. Le jeu de base sans alcool est tout aussi amusant.
 
 Prêt à jouer ? **Téléchargez [Partiz](https://partiz.app)** gratuitement — Je n'ai jamais est inclus avec des centaines de questions, plus 5 autres jeux de soirée, sans WiFi.
 
-Explorez d'autres jeux : [Comment jouer à Action ou Vérité](/fr/blog/how-to-play-truth-or-dare) · [Comment jouer à Tu préfères](/fr/blog/how-to-play-would-you-rather) · [Comment jouer aux Catégories](/fr/blog/how-to-play-categories)
+Explorez d'autres jeux : [Comment jouer à Action ou Vérité](/fr/blog/how-to-play-truth-or-dare) · [Comment jouer à Tu préfères](/fr/blog/how-to-play-would-you-rather) · [Comment jouer aux Catégories](/fr/blog/how-to-play-categories) · [Comment jouer à Imposteur](/fr/blog/how-to-play-impostor)

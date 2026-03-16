@@ -112,4 +112,4 @@ As long as you want. Most groups play for 20–40 minutes before naturally switc
 
 Ready to play? **Download [Partiz](https://partiz.app)** for free — it includes Truth or Dare with hundreds of questions and dares, plus 5 other party games, all without WiFi.
 
-Explore more games: [How to play Never Have I Ever](/en/blog/how-to-play-never-have-i-ever) · [How to play Would You Rather](/en/blog/how-to-play-would-you-rather) · [How to play Categories](/en/blog/how-to-play-categories)
+Explore more games: [How to play Never Have I Ever](/en/blog/how-to-play-never-have-i-ever) · [How to play Would You Rather](/en/blog/how-to-play-would-you-rather) · [How to play Categories](/en/blog/how-to-play-categories) · [How to play Impostor](/en/blog/how-to-play-impostor)

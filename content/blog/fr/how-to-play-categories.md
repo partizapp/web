@@ -195,4 +195,4 @@ Un tour de 10 catégories prend environ 20 à 30 minutes. Vous pouvez prolonger 
 
 Prêt à jouer ? **Téléchargez [Partiz](https://partiz.app)** gratuitement — les Catégories est inclus avec des centaines d'idées et un chrono automatique, plus 5 autres jeux de soirée, sans WiFi.
 
-Explorez d'autres jeux : [Action ou Vérité](/fr/blog/how-to-play-truth-or-dare) · [Je n'ai jamais](/fr/blog/how-to-play-never-have-i-ever) · [Tu préfères](/fr/blog/how-to-play-would-you-rather) · [Le Plus Probable](/fr/blog/how-to-play-most-likely-to)
+Explorez d'autres jeux : [Action ou Vérité](/fr/blog/how-to-play-truth-or-dare) · [Je n'ai jamais](/fr/blog/how-to-play-never-have-i-ever) · [Tu préfères](/fr/blog/how-to-play-would-you-rather) · [Le Plus Probable](/fr/blog/how-to-play-most-likely-to) · [Imposteur](/fr/blog/how-to-play-impostor)
